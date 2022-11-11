@@ -1,0 +1,36 @@
+.content-card{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border-color: aqua 1rem;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+.header button{
+    /*height: 30px;
+    width: 30px;
+    padding: 1rem;
+    background-color: #2f2504;
+    color: black;*/
+
+        background-color: aqua;
+        color: black;
+        right: 32px;
+        top: 32px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.2;
+        transition: 0.2s;
+}
+    
+.header button:hover {
+        opacity: 2;
+        background-color: #2f2504;
+      }
+
