@@ -1,0 +1,48 @@
+.about{
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3rem;
+    color:#39FF14;
+}
+
+span {
+    font-size: 1.5rem;
+    color: aliceblue;
+    opacity: 0.9
+    
+    ;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color:#39FF14;
+    height: 2rem;
+    width: 30px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+}

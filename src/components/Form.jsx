@@ -1,65 +1,64 @@
-import React from 'react'
-import Validacion from './Validacion.js';
+import React from "react";
+import { validation } from "./validation.js";
+import "./CSS/Form.css"
+import logo from "../img/Rick-and-Morty-500x281.png"
 
 export default function Form(props) {
+	const [userData, setUserData] = React.useState({
+		username: "",
+		password: "",
+	});
+	const [errors, setErrors] = React.useState({
+		username: "",
+		password: "",
+	});
 
-  
+	function handleInputChange(e) {
+		setErrors(
+			validation({
+				...userData,
+				[e.target.name]: e.target.value,
+			})
+		);
 
-  const {userData, setUserData} = React.useState({ 
-    username: "", 
-    password: "",
-});
+		setUserData({
+			...userData,
+			[e.target.name]: e.target.value,
+		});
+	}
 
-  const {errors, setErrors} = React.useState({ 
-    username: "", 
-    password: "",
-});
+	function handleSubmit(e) {
+		e.preventDefault();
+		props.login(userData);
+	}
 
+	return (
+		<div className="inicioS">
+			<form onSubmit={handleSubmit}>
+				<img src={logo} alt="logo" />
+				<h2>Inicio de sesión</h2>
+				<label htmlFor="username">Username:</label>
+				<input
+					placeholder="Escribe tu usuario..."
+					type="text"
+					name="username"
+					value={userData.username}
+					onChange={handleInputChange}
+				/>
+				{errors.username && <p>{errors.username}</p>}
 
-function handleInputChange(event){
-  setErrors(
-    Validacion({
-      ...userData,
-      [event.target.name]: event.target.value,
+				<label htmlFor="password">Password:</label>
+				<input
+				placeholder="Escribe tu contraseña..."
+					type="password"
+					name="password"
+					value={userData.password}
+					onChange={handleInputChange}
+				/>
+				<p>{errors.password && errors.password}</p>
 
-    })
-  )
-  
-  
-  setUserData({
-    ...userData,
-    [event.target.name]: event.target.value,
-  });
-}
-
-function handleSubmit(event){
-  event.preventDefault();
-  props.login(userData);
-}
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="username">Username</label>
-      <input 
-        type="email" 
-        name="username" 
-        placeholder='asdfg@ddd.com' 
-        value={userData.username} 
-        onChange={handleInputChange}/>
-
-        <p>{errors.username && errors.username}</p>
-
-      <label htmlFor="password">Password</label>
-      <input 
-        type="password" 
-        name="password" 
-        value={userData.password}
-        onChange={handleInputChange}/>
-
-        <p>{errors.password && errors.password}</p>
-    
-      <button type='submit'> Login </button>
-      </form>
-    </div>
-  )
+				<button type="submit">Ingresar</button>
+			</form>
+		</div>
+	);
 }

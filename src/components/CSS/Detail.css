@@ -1,0 +1,132 @@
+/* .detail{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-decoration: none;
+    
+    margin-left: 2rem;
+    color: #39FF14;
+    
+  }
+  .detail button{
+    text-align: center;
+    align-items: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 11px 23px;
+    text-overflow: clip;
+    background: #39FF14;
+    opacity:0.5;
+    margin-right: 3rem;
+    font-size: 18px;
+  }
+  .detail button:hover {
+    opacity:1;
+  }
+  .detail2{
+    
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00;
+  }
+  .detail2 img{
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+    
+  }
+  .detail3 p{
+    display: flex;
+    flex-direction: column;
+    color: #39FF14;
+    font-size: 25px;
+    padding: 1rem;
+    margin-left: 3rem;
+  } */
+  .detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 8rem;
+    margin-left: 2rem;
+    color: #39FF14;
+}
+
+.detail button{
+    text-align: center;
+    align-items: center;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    text-overflow: clip;
+    background: #39FF14;
+    opacity: 0.5;
+    margin-right: 2rem;
+    font-size: 1rem;
+}
+
+.detail button:hover {
+    opacity: 1;
+}
+
+.detail2{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00;
+    margin-top: 2rem;
+}
+
+.detail2 img{
+    width: 100%;
+    max-width: 325px;
+  
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.detail3 p{
+    display: flex;
+    flex-direction: column;
+    color: #39FF14;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .detail button {
+    margin-right: 1rem;
+  }
+  .detail2 img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .detail button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  .detail2 img {
+    padding: 0.5rem;
+  }
+  .detail3 p {
+    font-size: 1rem;
+  }
+}
+
+
+ 

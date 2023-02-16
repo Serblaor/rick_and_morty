@@ -1,10 +1,11 @@
 import Card from "./Card";
+import "./CSS/Card.css"
 
 export default function Cards(props) {
 	const { characters, onClose } = props;
 
 	return (
-		<div>
+		<div className="order">
 			{characters.map(character => (
 				<Card
 					name={character.name}
