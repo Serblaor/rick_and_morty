@@ -10,12 +10,20 @@ En cuanto al diseño, la aplicación tiene una barra de navegación con enlaces 
 
 ## Available Scripts
 
-In the project directory, you can run:
+Este proyecto lo puedes iniciar con:
 
 ### `npm i` y `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ejecuta la aplicación en modo de desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
 
+### Login 
+Usa estas credenciales:
 
+Correo: rickandmorty@hotmail.com
+Contraseña: Password1
+
+### Deploy
+
+https://rick-and-morty-app-navy.vercel.app/
 
