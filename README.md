@@ -22,7 +22,7 @@ Abre [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
 ### Login 
 Usa estas credenciales:
 
-Correo: rickandmorty@hotmail.com
+Correo: rickandmorty@hotmail.com <br>
 Contraseña: Password1
 
 ### Deploy
